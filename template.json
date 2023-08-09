@@ -1,0 +1,314 @@
+{
+    "Actor": {
+        "types": ["character"],
+        "htmlFields": ["biography"],
+        "templates": {
+            "attributes": {
+                "hp": {
+                    "value": 10,
+                    "max": 10,
+                    "temporary": 0
+                },
+                "mp": {
+                    "value": 10,
+                    "max": 10,
+                    "temporary": 0,
+                        "white": {
+                            "value": 0,
+                            "max": 0,
+                            "temporary": 0    
+                        },
+                        "blue": {
+                            "value": 0,
+                            "max": 0,
+                            "temporary": 0                            
+                        },
+                        "black": {
+                            "value": 0,
+                            "max": 0,
+                            "temporary": 0 
+                        },
+                        "red": {
+                            "value": 0,
+                            "max": 0,
+                            "temporary": 0
+                        },
+                        "green": {
+                            "value": 0,
+                            "max": 0,
+                            "temporary": 0
+                        },
+                        "colorless": {
+                            "value": 0,
+                            "max": 0,
+                            "temporary": 0
+                        }
+                    },
+                "str": {
+                    "value":0,
+                    "bonuses": {
+                        "others": 0
+                    }
+                },
+                "dex": {
+                    "value":0,
+                    "bonuses": {
+                        "others": 0
+                    }
+                },
+                "vit": {
+                    "value":0,
+                    "bonuses": {
+                        "others": 0
+                    }
+                },
+                "min": {
+                    "value":0,
+                    "bonuses": {
+                        "others": 0
+                    }
+                },
+                "sou": {
+                    "value":0,
+                    "bonuses": {
+                        "others": 0
+                    }
+                }
+            },
+            "fightAttributes": {
+                "physicalDefense": {
+                    "value": 10,
+                    "bonus": 0
+                },
+                "magicalDefense": {
+                    "value": 10,
+                    "bonus": 0
+                },
+                "attackMelee": {
+                    "value":0,
+                    "bonus": 0
+                },
+                "attackRanged": {
+                    "value":0,
+                    "bonus": 0
+                },
+                "attackMagical": {
+                    "value":0,
+                    "bonus": 0
+                },
+                "physicalResistance": {
+                    "value":0,
+                    "bonus": 0
+                },
+                "magicalResistance": {
+                    "value":0,
+                    "bonus": 0
+                }
+            },
+            "conditions": {
+                "blinded": false,
+                "bleeding": false,
+                "burning": false,
+                "controlled": false,
+                "dazed": false,
+                "dead": false,
+                "dying": false,
+                "exhausted": false,
+                "fallen": false,
+                "frightened": false,
+                "frozen": false,
+                "held": false,
+                "immobilized": false,
+                "invulnerable": false,
+                "nauseated": false,
+                "paralyzed": false,
+                "poisoned": false,
+                "sick": false,
+                "silenced": false,
+                "slowed": false,
+                "unaware": false,
+                "unconscious": false,
+                "vulnerable": false,
+                "weakened": false
+            },
+            "characterManaColors": {
+                "white": false,
+                "blue": false,
+                "black": false,
+                "red": false,
+                "green": false
+            }
+        },
+        "character": {
+            "templates": ["attributes", "fightAttributes", "conditions", "characterManaColors"],
+            "lineage": "Human",
+            "origin": "",
+            "characterLevel": {"value": 1}
+        }
+    },
+    "Item": {
+        "types": ["background", "backpack", "class", "consumable", "feat","tool", "spell", "weapon"],
+        "templates": {
+            "itemDescription": {
+                "value": "",
+                "chat": "",
+                "unidentified": ""
+            },
+            "physicalItem": {
+                "quantity": 1,
+                "weight": 0,
+                "price": 0,
+                "equipped": false,
+                "rarity": "",
+                "identified": true
+            },
+            "activatedEffect": {
+                "activation": {
+                  "type": "",
+                  "cost": null,
+                  "condition": ""
+                },
+                "duration": {
+                  "value": "",
+                  "units": ""
+                },
+                "cover": null,
+                "crewed": false,
+                "target": {
+                  "value": null,
+                  "width": null,
+                  "units": "",
+                  "type": ""
+                },
+                "range": {
+                  "value": null,
+                  "long": null,
+                  "units": ""
+                },
+                "uses": {
+                  "value": null,
+                  "max": "",
+                  "per": null,
+                  "recovery": ""
+                },
+                "consume": {
+                  "type": "",
+                  "target": null,
+                  "amount": null
+                }
+            },
+            "action": {
+                "ability": null,
+                "actionType": null,
+                "attackBonus": "",
+                "chatFlavor": "",
+                "critical": {
+                  "threshold": null,
+                  "damage": ""
+                },
+                "damage": {
+                  "parts": [],
+                  "versatile": ""
+                },
+                "formula": "",
+                "save": {
+                  "ability": "",
+                  "dc": null,
+                  "scaling": "spell"
+                }
+            }
+        },
+        "htmlFields": ["description.value", "description.chat", "description.unidentified"],
+        "background": {
+            "templates": ["itemDescription"],
+            "advancement": []
+        },
+        "backpack": {
+            "templates": ["itemDescription", "physicalItem"],
+            "capacity": {
+              "type": "weight",
+              "value": null,
+              "weightless": false
+            },
+            "currency": 0
+        },
+        "class": {
+            "templates": ["itemDescription"],
+            "identifier": "",
+            "skills": {
+                "number": 2,
+                "choices": [],
+                "value": []
+            }
+        },
+        "consumable": {
+            "templates": ["itemDescription", "physicalItem", "activatedEffect", "action"],
+            "consumableType": "potion",
+            "uses": {
+              "autoDestroy": false
+            }
+        },
+        "equipment": {
+            "templates": ["itemDescription", "physicalItem", "activatedEffect", "action"],
+            "armor": {
+              "type": "light",
+              "value": null,
+              "dex": null
+            },
+            "baseItem": "",
+            "speed": {
+              "value": null,
+              "conditions": ""
+            },
+            "strength": null,
+            "stealth": false,
+            "proficient": true
+        },
+        "feat": {
+            "templates": ["itemDescription", "activatedEffect", "action"],
+            "type": {
+              "value": "",
+              "subtype": ""
+            },
+            "requirements": "",
+            "recharge": {
+              "value": null,
+              "charged": false
+            }
+        },
+        "tool": {
+            "templates": ["itemDescription", "physicalItem"],
+            "toolType": "",
+            "baseItem": "",
+            "ability": "min",
+            "chatFlavor": "",
+            "proficient": 0,
+            "bonus": ""
+        },
+        "spell": {
+            "templates": ["itemDescription", "activatedEffect", "action"],
+            "legendary": false,
+            "enchantment": false,
+            "magicalAttack": false,
+            "manaCost": {
+                "white": 0,
+                "blue": 0,
+                "black": 0,
+                "red": 0,
+                "green": 0,
+                "colorless": 0,
+                "generic": 0
+            },
+            "castingTime": "",
+            "duration": "",
+            "reach": ""
+        },
+        "weapon": {
+            "templates": ["itemDescription", "physicalItem" ,"activatedEffect", "action"],
+            "weaponType": "simpleM",
+            "baseItem": "",
+            "properties": {},
+            "proficient": true
+        }
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "VMS.AbilityStr": "Strength",
+    "VMS.AbilityDex": "Dexterity",
+    "VMS.AbilityVit": "Vitality",
+    "VMS.AbilityMin": "Mind",
+    "VMS.AbilitySou": "Soul",
+
+    "VMS.AbilityStrAbbr": "Str",
+    "VMS.AbilityDexAbbr": "Dex",
+    "VMS.AbilityVitAbbr": "Vit",
+    "VMS.AbilityMinAbbr": "Min",
+    "VMS.AbilitySouAbbr": "Sou"
+
+    
+}

@@ -1,0 +1,57 @@
+{
+    "id": "vtt-magic-system",
+    "title": "Magic System - Adventures on Zendikar",
+    "description": "A system for playing a custom Magic: the Gathering inspired Roleplaying Game in the Foundry Virtual Tabletop environment.",
+    "version": "0.0.1",
+    "compatibility": {
+      "minimum": "11",
+      "verified": "11"
+    },
+    "url": "https://github.com/MatheusCordeiroP/vtt-magic-system",
+    "manifest": "",
+    "download": "https://github.com/MatheusCordeiroP/vtt-magic-system/archive/refs/heads/main.zip",
+    "authors": [
+      {
+        "name": "Matheus Cordeiro",
+        "url": "https://github.com/MatheusCordeiroP",
+        "flags": {}
+      },
+      {
+        "name": "Lucas Figueiredo",
+        "url": "https://github.com/lucasdfigueiredo",
+        "flags": {}
+      }
+    ],
+    "esmodules": [
+      "vtt-magic-system.js"
+    ],
+    "styles": [
+      "vtt-magic-system.css"
+    ],
+    "packs": [
+   
+    ],
+    "languages": [
+      {
+        "lang": "en",
+        "name": "English",
+        "path": "lang/en.json",
+        "flags": {}
+      }, {
+        "lang": "pt",
+        "name": "Português",
+        "path": "lang/pt.json",
+        "flags": {}
+      }
+    ],
+    "socket": true,
+    "initiative": "1d20",
+    "gridDistance": 1.5,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "attributes.hp",
+    "flags": {
+      "needsMigrationVersion": "2.2.0",
+      "compatibleMigrationVersion": "0.8"
+    }
+  }
+  
